@@ -52,7 +52,8 @@ public class BinarySearch {
         while (startIndexForSearch <= endIndexForSearch) {
 
             // calculate key index - a middle index number
-            int midIndexForSearch = (startIndexForSearch + endIndexForSearch) / 2;
+            // z = x + (y - x)/2
+            int midIndexForSearch = startIndexForSearch + ((endIndexForSearch - startIndexForSearch) / 2);
 
             if (valueForSearch == ints[midIndexForSearch]) {
                 aimValue = midIndexForSearch;
