@@ -20,10 +20,9 @@ public class SelectionSort {
         for (int i = 0; i < ints.length - 1; i++) {
             int min = ints[i];
             for (int j = i + 1; j < ints.length; j++) {
-                int temp;
                 if (min > ints[j]) {
                     min = ints[j];
-                    temp = ints[j];
+                    int temp = ints[j];
                     ints[j] = ints[i];
                     ints[i] = temp;
                 }
