@@ -21,9 +21,8 @@ public class BubbleSort {
         for (int i = 0; i < ints.length; i++) {
             for (int j = 0; j < (ints.length - 1) - i; j++) {   // last element has got a max value after external
                 // iteration
-                int temp;
                 if (ints[j] > ints[j + 1]) {
-                    temp = ints[j];
+                    int temp = ints[j];
                     ints[j] = ints[j + 1];
                     ints[j + 1] = temp;
                 }
