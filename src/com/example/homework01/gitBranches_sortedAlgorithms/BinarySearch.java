@@ -36,9 +36,8 @@ public class BinarySearch {
     private static void sort(int[] ints) {
         for (int i = 1; i < ints.length; i++) {
             for (int j = 0; j < i; j++) {
-                int temp;
                 if (ints[i] < ints[j]) {
-                    temp = ints[j];
+                    int temp = ints[j];
                     ints[j] = ints[i];
                     ints[i] = temp;
                 }
